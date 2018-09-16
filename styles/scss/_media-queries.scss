@@ -1,0 +1,14 @@
+@media (max-width: 415px) {
+    .navbar-collapse {
+        flex-basis: 100%;
+        .nav-item {
+            width: 10rem;
+        }
+        .navbar-nav {
+            flex-direction: column;
+        }
+    }
+    .navbar-nav {
+        margin: 0 auto;
+    }
+}

@@ -8691,4 +8691,20 @@ button:focus {
   outline: none;
 }
 
+@media (max-width: 415px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+  }
+  .navbar-collapse .nav-item {
+    width: 10rem;
+  }
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-nav {
+    margin: 0 auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
