@@ -1,0 +1,38 @@
+#showcase,
+#about,
+h2,
+h3,
+h4,
+h5,
+a {
+    font-family: $font-family-serif;
+}
+
+a {
+    text-transform: uppercase;
+    color: var(--font-color);
+    :hover {
+        text-decoration: none;
+    }
+}
+
+p {
+    font-family: $font-family-sans-serif;
+    font-size: 1.25rem;
+    line-height: 2rem;
+}
+
+.lead {
+    font-family: $font-family-serif;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+.lighter {
+    color: var(--font-color-lighter);
+    font-weight: 800;
+}
+
+i {
+    font-size: 6rem;
+}
