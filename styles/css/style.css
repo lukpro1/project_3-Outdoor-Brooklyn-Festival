@@ -8691,7 +8691,12 @@ button:focus {
   outline: none;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 800px) {
+  .navbar-collapse .navbar-nav {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
   .navbar-collapse {
     flex-basis: 100%;
   }
@@ -8702,8 +8707,16 @@ button:focus {
     flex-direction: column;
   }
 
-  .navbar-nav {
-    margin: 0 auto;
+  .main-section .socialbar {
+    visibility: hidden;
+  }
+}
+@media (min-width: 800px) and (max-width: 1063px) {
+  .navbar-collapse .navbar-nav {
+    margin-right: auto;
+  }
+  .navbar-collapse .nav-item {
+    width: 10rem;
   }
 }
 
