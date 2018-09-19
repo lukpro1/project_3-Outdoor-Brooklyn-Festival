@@ -11,7 +11,7 @@ a {
 a {
     text-transform: uppercase;
     color: var(--font-color);
-    :hover {
+    &:hover {
         text-decoration: none;
     }
 }

@@ -165,9 +165,9 @@
 // //
 // // Style anchor elements.
 
-// $link-color:                theme-color("primary") !default;
+$link-color:                var(--font-color);
 // $link-decoration:           none !default;
-// $link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-color:          var(--btn-hover);
 // $link-hover-decoration:     underline !default;
 
 // // Paragraphs

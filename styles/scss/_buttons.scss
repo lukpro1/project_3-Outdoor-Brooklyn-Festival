@@ -1,5 +1,17 @@
 button:focus {
     outline: none;
+    text-decoration: none;
 }
 
+.btn-link {
+    border: 1px solid var(--btn-border-color);
+    padding: 1.25rem 1.75rem;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+    color:  var(--btn-hover);
+    background-color: var(--btn-border-color);
+
+}
 

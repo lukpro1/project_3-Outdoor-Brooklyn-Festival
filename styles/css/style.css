@@ -154,13 +154,13 @@ sup {
 }
 
 a {
-  color: #007bff;
+  color: var(--font-color);
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:hover {
-  color: #0056b3;
+  color: var(--btn-hover);
   text-decoration: underline;
 }
 
@@ -2644,11 +2644,11 @@ fieldset:disabled a.btn {
 
 .btn-link {
   font-weight: 400;
-  color: #007bff;
+  color: var(--font-color);
   background-color: transparent;
 }
 .btn-link:hover {
-  color: #0056b3;
+  color: var(--btn-hover);
   text-decoration: underline;
   background-color: transparent;
   border-color: transparent;
@@ -8613,6 +8613,8 @@ a.text-dark:hover, a.text-dark:focus {
 :root {
   --font-color: rgba(18, 0, 24, 0.906);
   --font-color-lighter: rgba(37, 1, 49, 0.906);
+  --btn-border-color: #241c2c;
+  --btn-hover: #e3e6e7;
 }
 
 .mb-6 {
@@ -8633,7 +8635,7 @@ a {
   text-transform: uppercase;
   color: var(--font-color);
 }
-a :hover {
+a:hover {
   text-decoration: none;
 }
 
@@ -8689,13 +8691,20 @@ header {
 
 button:focus {
   outline: none;
+  text-decoration: none;
 }
 
-@media (max-width: 800px) {
-  .navbar-collapse .navbar-nav {
-    margin: 0 auto;
-  }
+.btn-link {
+  border: 1px solid var(--btn-border-color);
+  padding: 1.25rem 1.75rem;
 }
+
+.btn-link:hover {
+  text-decoration: none;
+  color: var(--btn-hover);
+  background-color: var(--btn-border-color);
+}
+
 @media (max-width: 800px) {
   .navbar-collapse {
     flex-basis: 100%;
@@ -8705,6 +8714,7 @@ button:focus {
   }
   .navbar-collapse .navbar-nav {
     flex-direction: column;
+    margin: 0 auto;
   }
 }
 @media (min-width: 800px) and (max-width: 1063px) {
