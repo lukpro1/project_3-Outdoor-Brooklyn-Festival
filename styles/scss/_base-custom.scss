@@ -12,3 +12,10 @@
  .mb-6 {
      margin-bottom: 5rem;
  }
+
+
+ #movies-list {
+     .list-group {
+         flex-direction: row;
+     }
+ }
