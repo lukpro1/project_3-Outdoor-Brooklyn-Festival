@@ -16,11 +16,16 @@ button:focus {
 }
 
 #movies-list {
+    .col-lg-2 {
+        padding: 0;
+    }
     .btn {
         border: 1px solid transparent;
-        padding: 3rem 4rem;
+        // padding: 3rem 4rem;
         line-height: 1.5;
         border-radius: 0rem;
+        width: 100%;
+
     }
     .btn-link {
         border: 1px solid var(--btn-border-color);
@@ -34,6 +39,7 @@ button:focus {
         }
     }
     .modal {
+
         .btn {
             padding: 0.75rem 1rem;
             border-radius: 0.25rem;

@@ -8729,11 +8729,14 @@ button:focus {
   background-color: var(--btn-border-color);
 }
 
+#movies-list .col-lg-2 {
+  padding: 0;
+}
 #movies-list .btn {
   border: 1px solid transparent;
-  padding: 3rem 4rem;
   line-height: 1.5;
   border-radius: 0rem;
+  width: 100%;
 }
 #movies-list .btn-link {
   border: 1px solid var(--btn-border-color);
