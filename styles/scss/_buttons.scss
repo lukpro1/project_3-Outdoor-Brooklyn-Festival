@@ -53,8 +53,9 @@ button:focus {
 .sponsor-info {
     .btn-link {
         border: 1px solid var(--btn-hover);
-        padding: 1.25rem 1.75rem;
+        padding: 2rem 2.25rem;
         color: var(--btn-hover);
+        text-transform: uppercase;
 
         &:hover {
             text-decoration: none;
@@ -62,5 +63,23 @@ button:focus {
             background-color: var(--btn-border-color);
         }
     }
+}
 
+.news-box {
+    a {
+        color: #e2d6da;
+    }
+    .btn-link {
+        border: 1px solid #e2d6da;
+        padding: 2rem 2.25rem;
+        letter-spacing: 4px;
+        font-size: 1.25rem;
+
+
+        &:hover {
+            text-decoration: none;
+            color: var(--btn-hover);
+            background-color: var(--btn-border-color);
+        }
+    }
 }
