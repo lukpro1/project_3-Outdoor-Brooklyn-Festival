@@ -8703,6 +8703,17 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: center;
 }
 
+.main-footer {
+  background-color: var(--patternColor);
+}
+.main-footer .lead {
+  margin: 0;
+}
+.main-footer a,
+.main-footer p {
+  color: var(--btn-hover);
+}
+
 #showcase,
 #about,
 h2,

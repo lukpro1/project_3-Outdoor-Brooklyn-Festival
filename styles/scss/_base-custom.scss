@@ -105,3 +105,15 @@
         background-size: cover;
         background-position: center;
     }
+
+
+.main-footer {
+    background-color: var(--patternColor);
+        .lead {
+            margin: 0;
+        }
+        a,
+        p {
+            color: var(--btn-hover);
+        }
+    }
