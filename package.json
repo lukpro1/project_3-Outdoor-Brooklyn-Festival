@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "gh-pages -d BrooklynVibesEvents v.2.0"
+    "deploy": "gh-pages -d BrooklynVibesEvents v.2.0"
   },
   "repository": {
     "type": "git",
