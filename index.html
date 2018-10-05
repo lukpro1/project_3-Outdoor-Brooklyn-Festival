@@ -37,7 +37,7 @@
                                 <a class="nav-link" href="#">Lineup/news</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sign up</a>
+                                <a class="nav-link" href="#" data-toggle="modal"   data-target="#registerForm">Sign up</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
@@ -85,14 +85,57 @@
                                 </h1>
                                 <p class="lead text-uppercase py-5 ml-5">August 5th to 8th at
                                     Brooklyn Bridge Park</p>
-                                <a href="#" class="btn btn-link mx-auto  mt-2 mb-6">
+                                <button type="button" class="btn btn-link mx-auto  mt-2 mb-6" data-toggle="modal"
+                                    data-target="#registerForm">
                                     Get tickets for
                                     free!
-                                </a>
+                                </button>
+                                <div class="modal" id="registerForm">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Get tickets for free!</h4>
+                                                <button type="button" class="close" data-dismiss="modal">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                                <label>First name</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="First name">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>Last name</label>
+                                                            <input type="text" class="form-control"
+                                                                placeholder="Last name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail"
+                                                            placeholder="johndoe@gmail.com">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label>Date of Birth</label>
+                                                        <input type="date" id="datepicker" class="form-control" placeholder="Choose">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Register</button>
+                                            </div>
+
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
             </div>
         </section>
@@ -363,9 +406,9 @@
                         <p class="pt-2">The Festival present a wide range of international movies.
                             Organized by Brooklyn Vibes Events as usual will provide varied evenings for you and your
                             loved ones.</p>
-                            <a href="#" class="btn btn-link mx-auto  mt-5 mb-6">
-                                Check the Lineup!
-                            </a>
+                        <a href="#" class="btn btn-link mx-auto  mt-5 mb-6">
+                            Check the Lineup!
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
@@ -456,15 +499,15 @@
         <div class="container-fluid">
             <div class="row justify-content-center h-75">
 
-                    <div class="col-md-8 d-inline-flex justify-content-around">
-                        <div class="btn btn-link my-auto"><a href="">
+                <div class="col-md-8 d-inline-flex justify-content-around">
+                    <div class="btn btn-link my-auto"><a href="">
                             Brooklyn News
                         </a></div>
 
-                        <div class="btn btn-link my-auto"><a href="">
+                    <div class="btn btn-link my-auto"><a href="">
                             Brooklyn Bridge Park
                         </a></div>
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -477,10 +520,10 @@
                     <p class="lead"> &copy; Brooklyn Vibes Events 2018 </p>
                 </div>
                 <div class="col-md-3 d-flex justify-content-end mr-5 socialbar">
-                        <a href="https://facebook.com" class="mr-4"><span class="fab fa-facebook-f"></span></a>
-                        <a href="https://twitter.com" class="mx-4"><span class="fab fa-twitter"></span></a>
-                        <a href="https://instagram.com" class="mx-4"><span class="fab fa-instagram"></span></a>
-                        <a href="https://plus.google.com" class="ml-4"><span class="fab fa-google-plus-g"></span></a>
+                    <a href="https://facebook.com" class="mr-4"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://twitter.com" class="mx-4"><span class="fab fa-twitter"></span></a>
+                    <a href="https://instagram.com" class="mx-4"><span class="fab fa-instagram"></span></a>
+                    <a href="https://plus.google.com" class="ml-4"><span class="fab fa-google-plus-g"></span></a>
                 </div>
             </div>
         </div>
@@ -492,6 +535,17 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script>
+            $(function() {
+                $( "#datepicker" ).datepicker({
+                    dateFormat : 'mm/dd/yy',
+                    changeMonth : true,
+                    changeYear : true,
+                    yearRange: '-100y:c+nn',
+                    maxDate: '-1d'
+                });
+            });
+            </script>
 </body>
 
 </html>
