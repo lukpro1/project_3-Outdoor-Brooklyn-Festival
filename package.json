@@ -1,0 +1,24 @@
+{
+  "name": "brooklynvibesevents-v.2.0",
+  "version": "1.0.0",
+  "description": "project 3 regarding to Front-End Dev Path in OpenClassrooms",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "gh-pages": "^2.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "gh-pages -d BrooklynVibesEvents v.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukpro1/project_3-Outdoor-Brooklyn-Festival.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukpro1/project_3-Outdoor-Brooklyn-Festival/issues"
+  },
+  "homepage": "https://obf.github.io"
+}
