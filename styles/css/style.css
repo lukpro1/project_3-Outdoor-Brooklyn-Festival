@@ -8784,21 +8784,21 @@ header {
 }
 
 button:focus, button:active,
-.btn-link:focus,
-.btn-link:active {
+.btn-lighten:focus,
+.btn-lighten:active {
   outline: none;
   text-decoration: none;
   border-color: var(--btn-border-color);
 }
 
-.btn-link {
+.btn-lighten {
   border: 1px solid var(--btn-border-color);
   padding: 1.25rem 1.75rem;
   color: var(--font-color);
   font-size: 1.25em;
   text-transform: uppercase;
 }
-.btn-link:hover {
+.btn-lighten:hover {
   text-decoration: none;
   color: var(--btn-hover);
   background-color: var(--btn-border-color);

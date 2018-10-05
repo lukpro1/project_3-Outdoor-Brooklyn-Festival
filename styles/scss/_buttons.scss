@@ -1,5 +1,5 @@
 button,
-.btn-link{
+.btn-lighten{
 
     &:focus,
     &:active {
@@ -11,7 +11,7 @@ button,
 
 
 
-.btn-link {
+.btn-lighten {
     border: 1px solid var(--btn-border-color);
     padding: 1.25rem 1.75rem;
     color: var(--font-color);
