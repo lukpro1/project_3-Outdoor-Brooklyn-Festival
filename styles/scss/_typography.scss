@@ -1,27 +1,28 @@
-#showcase,
-#about,
-h2,
-h3,
-h4,
-h5,
-a,
-button {
+body {
     font-family: $font-family-serif;
+}
+
+i {
+    font-size: 6rem;
 }
 
 a {
     text-transform: uppercase;
     color: var(--font-color);
+
     &:hover {
         text-decoration: none;
+        color: var(--font-color-lighter)
     }
 
 }
-p {
+
+.sub-lead {
     font-family: $font-family-sans-serif;
     font-size: 1.25rem;
     line-height: 2rem;
 }
+
 
 .lead {
     font-family: $font-family-serif;
@@ -34,6 +35,13 @@ p {
     font-weight: 800;
 }
 
-i {
-    font-size: 6rem;
+.title {
+    letter-spacing: 0.25rem;
+    font-family: $font-header;
+}
+
+.btn {
+    font-family: $font-family-serif;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
 }

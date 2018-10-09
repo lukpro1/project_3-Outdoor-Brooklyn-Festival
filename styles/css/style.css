@@ -8612,7 +8612,7 @@ a.text-dark:hover, a.text-dark:focus {
    -------------------------------------------------------- */
 :root {
   --font-color: rgba(18, 0, 24, 0.906);
-  --font-color-lighter: rgba(37, 1, 49, 0.906);
+  --font-color-lighter: rgba(55, 0, 73, 0.906);
   --btn-border-color: #241c2c;
   --btn-hover: #e3e6e7;
   --patternColor: #1f1a25;
@@ -8638,7 +8638,7 @@ a.text-dark:hover, a.text-dark:focus {
   height: 60%;
 }
 
-.bg-movie {
+.bg-brighter {
   background-color: #e2d6da;
 }
 
@@ -8651,10 +8651,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: linear-gradient(rgba(25, 17, 34, 0.4), rgba(18, 10, 28, 0.6));
 }
 
-#movies-list .list-group {
+.movies-bar .list-group {
   flex-direction: row;
 }
-#movies-list .card {
+.movies-bar .card {
   flex-direction: row;
 }
 
@@ -8697,7 +8697,7 @@ a.text-dark:hover, a.text-dark:focus {
   object-fit: scale-down;
 }
 
-#news-links {
+.news-box {
   background: linear-gradient(rgba(25, 17, 34, 0.8), rgba(18, 10, 28, 0.8)), url("../../assets/the-vantage-point.jpg");
   background-size: cover;
   background-position: center;
@@ -8714,15 +8714,12 @@ a.text-dark:hover, a.text-dark:focus {
   color: var(--btn-hover);
 }
 
-#showcase,
-#about,
-h2,
-h3,
-h4,
-h5,
-a,
-button {
+body {
   font-family: "Noto Serif KR", serif;
+}
+
+i {
+  font-size: 6rem;
 }
 
 a {
@@ -8731,9 +8728,10 @@ a {
 }
 a:hover {
   text-decoration: none;
+  color: var(--font-color-lighter);
 }
 
-p {
+.sub-lead {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.25rem;
   line-height: 2rem;
@@ -8750,8 +8748,15 @@ p {
   font-weight: 800;
 }
 
-i {
-  font-size: 6rem;
+.title {
+  letter-spacing: 0.25rem;
+  font-family: "Monoton";
+}
+
+.btn {
+  font-family: "Noto Serif KR", serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
 }
 
 header {
@@ -8774,86 +8779,56 @@ header {
   flex-direction: row;
 }
 
-.title {
-  letter-spacing: 0.25rem;
-  font-family: "Monoton";
-}
-
 .socialbar {
   font-size: 1.5rem;
 }
-
-button:focus, button:active,
-.btn-lighten:focus,
-.btn-lighten:active {
-  outline: none;
-  text-decoration: none;
-  border-color: var(--btn-border-color);
+.socialbar a {
+  width: max-content;
 }
 
-.btn-lighten {
-  border: 1px solid var(--btn-border-color);
-  padding: 1.25rem 1.75rem;
-  color: var(--font-color);
-  font-size: 1.25em;
-  text-transform: uppercase;
-}
-.btn-lighten:hover {
-  text-decoration: none;
-  color: var(--btn-hover);
-  background-color: var(--btn-border-color);
-}
-
-#movies-list .col-lg-2 {
-  padding: 0;
-}
-#movies-list .btn {
-  border: 1px solid transparent;
-  line-height: 1.5;
-  border-radius: 0rem;
-  width: 100%;
-  height: 18%;
-}
-#movies-list .btn-link {
-  border: 1px solid var(--btn-border-color);
-  color: var(--btn-hover);
-  background-color: var(--btn-border-color);
-}
-#movies-list .btn-link:hover {
-  text-decoration: none;
-  color: var(--font-color);
+button,
+.btn-light {
   background-color: transparent;
 }
-#movies-list .modal .btn {
-  padding: 0.75rem 1rem;
-  border-radius: 0.25rem;
-}
 
-.sponsor-info .btn-link {
+.btn-light {
   border: 1px solid var(--btn-hover);
   padding: 2rem 2.25rem;
   color: var(--btn-hover);
   text-transform: uppercase;
 }
-.sponsor-info .btn-link:hover {
+.btn-light:hover {
   text-decoration: none;
   color: var(--btn-hover);
   background-color: var(--btn-border-color);
+}
+.btn-light:focus, .btn-light:active {
+  outline: none;
+  text-decoration: none;
+  border-color: var(--btn-hover);
+}
+.btn-light a {
+  color: var(--btn-hover);
 }
 
-.news-box a {
-  color: #e2d6da;
-}
-.news-box .btn-link {
-  border: 1px solid #e2d6da;
+.btn-darker {
+  border: 1px solid var(--font-color);
   padding: 2rem 2.25rem;
-  letter-spacing: 4px;
-  font-size: 1.25rem;
+  color: var(--font-color);
+  text-transform: uppercase;
 }
-.news-box .btn-link:hover {
+.btn-darker:hover {
   text-decoration: none;
   color: var(--btn-hover);
-  background-color: var(--btn-border-color);
+  background-color: var(--font-color);
+}
+.btn-darker:focus, .btn-darker:active {
+  outline: none;
+  text-decoration: none;
+  border-color: var(--font-color);
+}
+.btn-darker a {
+  color: var(--btn-hover);
 }
 
 @media (max-width: 800px) {

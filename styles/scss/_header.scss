@@ -22,15 +22,9 @@ header {
     }
 }
 
-
-                    //....showcase
-
-
-.title {
-    letter-spacing: 0.25rem;
-    font-family: $font-header;
-}
-
 .socialbar {
     font-size: 1.5rem;
+    a {
+        width: max-content;
+    }
 }

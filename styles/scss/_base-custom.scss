@@ -1,7 +1,7 @@
 // CSS Variables
 :root {
     --font-color: rgba(18, 0, 24, 0.906);
-    --font-color-lighter: rgba(37, 1, 49, 0.906);
+    --font-color-lighter: rgba(55, 0, 73, 0.906);
     --btn-border-color: #241c2c;
     --btn-hover: #e3e6e7;
     --patternColor: #1f1a25;
@@ -30,7 +30,7 @@
     height: 60%;
 }
 
-.bg-movie {
+.bg-brighter {
     background-color: #e2d6da;
 }
 
@@ -44,7 +44,8 @@
         rgba(18, 10, 28, 0.6));
 }
 
-#movies-list {
+.movies-bar {
+
     .list-group {
         flex-direction: row;
     }
@@ -103,12 +104,13 @@
 }
 
 
-#news-links {
+.news-box {
     background: linear-gradient(rgba(25, 17, 34, 0.8),
         rgba(18, 10, 28, 0.8)),
         url("../../assets/the-vantage-point.jpg");
     background-size: cover;
     background-position: center;
+
 }
 
 
