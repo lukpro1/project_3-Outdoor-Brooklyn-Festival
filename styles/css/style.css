@@ -8618,6 +8618,10 @@ a.text-dark:hover, a.text-dark:focus {
   --patternColor: #1f1a25;
 }
 
+body {
+  background-color: #e2d6da;
+}
+
 .mb-6 {
   margin-bottom: 5rem;
 }
@@ -8638,17 +8642,13 @@ a.text-dark:hover, a.text-dark:focus {
   height: 60%;
 }
 
-.bg-brighter {
-  background-color: #e2d6da;
-}
-
 .img-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(rgba(25, 17, 34, 0.4), rgba(18, 10, 28, 0.6));
+  background: linear-gradient(rgba(197, 167, 231, 0.2), rgba(193, 164, 230, 0.2));
 }
 
 .movies-bar .list-group {
@@ -8657,9 +8657,14 @@ a.text-dark:hover, a.text-dark:focus {
 .movies-bar .card {
   flex-direction: row;
 }
-
-#about .img-fluid {
-  height: 100%;
+.movies-bar .col-lg-2 {
+  padding: 0;
+}
+.movies-bar .btn {
+  border-radius: 0rem;
+  width: 100%;
+  height: 10rem;
+  text-transform: none;
 }
 
 .info-section {
@@ -8684,17 +8689,6 @@ a.text-dark:hover, a.text-dark:focus {
   background-size: cover;
   background-position: center;
   margin-top: 10rem;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cover {
-  object-fit: scale-down;
 }
 
 .news-box {
@@ -8786,25 +8780,32 @@ header {
   width: max-content;
 }
 
+*:focus,
+*:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 button,
 .btn-light {
   background-color: transparent;
 }
 
+.btn {
+  padding: 2rem 2.25rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
 .btn-light {
   border: 1px solid var(--btn-hover);
-  padding: 2rem 2.25rem;
   color: var(--btn-hover);
-  text-transform: uppercase;
 }
 .btn-light:hover {
-  text-decoration: none;
   color: var(--btn-hover);
   background-color: var(--btn-border-color);
 }
 .btn-light:focus, .btn-light:active {
-  outline: none;
-  text-decoration: none;
   border-color: var(--btn-hover);
 }
 .btn-light a {
@@ -8813,22 +8814,25 @@ button,
 
 .btn-darker {
   border: 1px solid var(--font-color);
-  padding: 2rem 2.25rem;
   color: var(--font-color);
-  text-transform: uppercase;
 }
 .btn-darker:hover {
-  text-decoration: none;
   color: var(--btn-hover);
   background-color: var(--font-color);
 }
 .btn-darker:focus, .btn-darker:active {
-  outline: none;
-  text-decoration: none;
   border-color: var(--font-color);
 }
-.btn-darker a {
+
+.btn-movie {
+  border: 1px solid var(--patternColor);
   color: var(--btn-hover);
+  background-color: var(--patternColor);
+}
+.btn-movie:hover {
+  color: var(--font-color);
+  background-color: transparent;
+  border: none;
 }
 
 @media (max-width: 800px) {
