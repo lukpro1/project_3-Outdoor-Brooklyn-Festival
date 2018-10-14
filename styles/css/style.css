@@ -5276,14 +5276,14 @@ button.close {
   align-items: center;
   justify-content: center;
   width: 15%;
-  color: #fff;
+  color: #1f1a25;
   text-align: center;
   opacity: 0.5;
 }
 .carousel-control-prev:hover, .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
-  color: #fff;
+  color: #1f1a25;
   text-decoration: none;
   outline: 0;
   opacity: 0.9;
@@ -5307,11 +5307,11 @@ button.close {
 }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f1a25' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231f1a25' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators {
@@ -8717,13 +8717,14 @@ body {
   margin-top: 10rem;
 }
 
-/* NEWS-LINKS STYLES */
+/* NEWS-LINKS SECTION STYLES */
 .news-box {
   background: linear-gradient(rgba(25, 17, 34, 0.8), rgba(18, 10, 28, 0.8)), url("../../assets/the-vantage-point.jpg");
   background-size: cover;
   background-position: center;
 }
 
+/* SPONSORS SECTION STYLES */
 /* FOOTER STYLES */
 .main-footer {
   background-color: var(--patternColor);
@@ -8853,7 +8854,7 @@ button,
 }
 
 .btn-movie {
-  border: 1px solid var(--patternColor);
+  border-right: 1px solid rgba(227, 230, 231, 0.171);
   color: var(--btn-hover);
   background-color: var(--patternColor);
 }
