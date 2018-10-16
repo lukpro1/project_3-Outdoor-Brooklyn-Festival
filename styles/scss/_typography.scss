@@ -1,6 +1,6 @@
 
 body {
-    font-family: $font-family-serif;
+    font-family: $font-family-sans-serif;
 }
 
 i {
@@ -9,7 +9,7 @@ i {
 
 a {
     text-transform: uppercase;
-    color: var(--font-color);
+    color: var(--btn-hover);
 
     &:hover {
         text-decoration: none;
@@ -19,30 +19,27 @@ a {
 }
 
 .sub-lead {
-    font-family: $font-family-sans-serif;
     font-size: 1.25rem;
     line-height: 2rem;
 }
 
 
 .lead {
-    font-family: $font-family-serif;
     font-size: 1.5rem;
     line-height: 2.5rem;
-}
-
-.lighter {
+    letter-spacing: 2px;
     color: var(--font-color-lighter);
-    font-weight: 800;
 }
 
 .title {
     letter-spacing: 0.25rem;
     font-family: $font-header;
+    color: var(--btn-hover);
+    text-shadow: 2px 4px 3px rgba(99, 99, 99, 0.3);
 }
 
 .btn {
-    font-family: $font-family-serif;
-    font-size: 1.25rem;
-    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 1.20rem;
+    letter-spacing: 1.75px;
 }

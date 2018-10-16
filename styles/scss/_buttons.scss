@@ -16,7 +16,7 @@ button,
 }
 
 .btn-light {
-    border: 1px solid var(--btn-hover);
+    border: 3px solid var(--btn-hover);
     color: var(--btn-hover);
 
     &:hover {
@@ -35,7 +35,7 @@ button,
 }
 
 .btn-darker {
-    border: 1px solid var(--font-color);
+    border: 2px solid var(--font-color);
     color: var(--font-color);
 
     &:hover {
@@ -53,6 +53,7 @@ button,
     border-right: 1px solid rgba(227, 230, 231, 0.171);
     color: var(--btn-hover);
     background-color: var(--patternColor);
+    font-weight: 200;
 
     &:hover {
         color: var(--font-color);
