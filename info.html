@@ -16,43 +16,112 @@
 <body>
 
     <header class="info-header">
-        <div class="container-fluid">
-            <nav class="navbar navbar-dark bg-transparent justify-content-end">
+        <nav class="navbar navbar-dark bg-transparent justify-content-end">
 
-                <button class="navbar-toggler order-sm-0 order-md-1 " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!----- navbar ----->
+            <button class="navbar-toggler order-sm-0 order-md-1 " type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!----- navbar ----->
 
-                <div class="navbar-collapse collapse " id="navbarTogglerDemo02">
-                    <div class="row">
-                        <ul class="navbar-nav text-center ml-lg-auto pr-lg-3">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">About</a>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Lineup/news</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#registerForm">Sign up</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                        <div class="socialbar d-flex d-md-none flex-row w-100 justify-content-center mt-3">
-                            <a href="https://facebook.com" class="mr-4"><span class="fab fa-facebook-f"></span></a>
-                            <a href="https://twitter.com" class="mx-4"><span class="fab fa-twitter"></span></a>
-                            <a href="https://instagram.com" class="mx-4"><span class="fab fa-instagram"></span></a>
-                            <a href="https://plus.google.com" class="ml-4"><span class="fab fa-google-plus-g"></span></a>
-                        </div>
-
+            <div class="navbar-collapse collapse " id="navbarTogglerDemo02">
+                <div class="row">
+                    <ul class="navbar-nav text-center ml-lg-auto pr-lg-3">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Lineup/news</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-toggle="modal" data-target="#registerForm">Sign up</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="socialbar d-flex d-md-none flex-row w-100 justify-content-center mt-3">
+                        <a href="https://facebook.com" class="mr-4"><span class="fab fa-facebook-f"></span></a>
+                        <a href="https://twitter.com" class="mx-4"><span class="fab fa-twitter"></span></a>
+                        <a href="https://instagram.com" class="mx-4"><span class="fab fa-instagram"></span></a>
+                        <a href="https://plus.google.com" class="ml-4"><span class="fab fa-google-plus-g"></span></a>
                     </div>
-                </div>
 
-            </nav>
-        </div>
+                </div>
+            </div>
+
+        </nav>
+
+
+        <section id="main-header" class="main-section">
+            <!-- <div class="container-fluid"> -->
+            <div class="container-fluid h-90">
+
+                <div class="row h-90">
+                    <div class="col-sm-12 h-40">
+                        <div class="row">
+                            <div class="col-sm-2 ml-5">
+                                <a href=""><img src="assets/logo.svg" width="280" alt="Agency name"></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 h-50 d-flex flex-column">
+
+                        <h2 class="title display-3 ml-5 pl-5 mb-5">Line-UP <br> Information</h2>
+
+                        <button type="button" class="btn btn-light w-25 mx-auto mt-5" data-toggle="modal" data-target="#registerForm">
+                            Get tickets for
+                            free!
+                        </button>
+                        <div class="modal" id="registerForm">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Get tickets for free!</h4>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label>First name</label>
+                                                    <input type="text" class="form-control" placeholder="First name">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label>Last name</label>
+                                                    <input type="text" class="form-control" placeholder="Last name">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputEmail">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@gmail.com">
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Date of Birth</label>
+                                                <input type="date" id="datepicker" class="form-control" placeholder="Choose">
+                                            </div>
+                                            <button type="submit" class="btn btn-darker">Register</button>
+                                    </div>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </header>
+
+
+
 
 
 
@@ -61,7 +130,7 @@
     <footer id="footer" class="main-footer h-20">
 
         <div class="container-fluid">
-            <div class="row h-100 justify-content-between align-items-center">
+            <div class="row h-20 justify-content-between align-items-center">
                 <div class="col-md-3 d-flex justify-content-start copyright ml-4">
                     <p> &copy; Brooklyn Vibes Events 2018 </p>
                 </div>

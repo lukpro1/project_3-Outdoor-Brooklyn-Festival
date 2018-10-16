@@ -13,6 +13,7 @@ button,
     padding: 2rem 2.25rem;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 400;
 }
 
 .btn-light {
@@ -52,7 +53,7 @@ button,
 .btn-movie {
     border-right: 1px solid rgba(227, 230, 231, 0.171);
     color: var(--btn-hover);
-    background-color: var(--patternColor);
+    background-color: var(--primaryColor);
     font-weight: 200;
 
     &:hover {
