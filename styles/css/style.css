@@ -8600,10 +8600,11 @@ a.text-dark:hover, a.text-dark:focus {
   --font-color-lighter: rgba(55, 0, 73, 0.906);
   --btn-border-color: #241c2c;
   --btn-hover: #e3e6e7;
-  --patternColor: #1f1a25;
+  --patternColor: #5724a8;
+  --footerColor: #1c0136;
   --primaryColor: #1e023c;
   --secondaryColor:#5724a8;
-  --footerColor: ;
+  --sectionTitle: #7f5ee3;
 }
 
 html,
@@ -8722,7 +8723,7 @@ header .lead {
 
 .modal-footer {
   display: flex;
-  background-color: var(--patternColor);
+  background-color: var(--footerColor);
 }
 .modal-footer .btn {
   width: 18%;
@@ -8793,18 +8794,26 @@ LOCATION SECTION STYLES
 .location-info {
   background-color: #1e023c;
 }
+.location-info .section-title {
+  border-bottom: 1px solid #431580;
+  color: var(--sectionTitle);
+  padding: 0;
+}
 
 /* FOOTER STYLES */
-.main-footer {
+footer.main-footer {
   font-size: 1.25rem;
-  background-color: var(--patternColor);
+  background-color: var(--footerColor);
 }
-.main-footer .lead {
+footer.main-footer .lead {
   margin: 0;
 }
-.main-footer a,
-.main-footer p {
+footer.main-footer a,
+footer.main-footer p {
   color: var(--btn-hover);
+}
+footer.info-page-border {
+  border-top: 1px solid #2e134a;
 }
 
 body {
