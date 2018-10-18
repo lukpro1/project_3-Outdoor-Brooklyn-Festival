@@ -57,7 +57,7 @@
             <div class="container-fluid h-90">
 
                 <div class="row h-90">
-                    <div class="col-sm-12 h-40">
+                    <div class="col-sm-12 h-30">
                         <div class="row">
                             <div class="col-sm-2 ml-5">
                                 <a href=""><img src="assets/logo.svg" width="280" alt="Agency name"></a>
@@ -65,48 +65,55 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 h-50 d-flex flex-column">
+                    <div class="col-sm-12 h-50">
 
-                        <h2 class="title display-3 ml-5 pl-5 mb-5">Line-UP <br> Information</h2>
+                        <div class="container d-flex flex-column mb-5">
+                            <h2 class="title display-3">
+                                <span class="d-block ">Line-UP</span>
+                                <span class="d-block mt-3">Information</span>
+                            </h2>
 
-                        <button type="button" class="btn btn-light w-25 mx-auto mt-5" data-toggle="modal" data-target="#registerForm">
-                            Get tickets for
-                            free!
-                        </button>
-                        <div class="modal" id="registerForm">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h4 class="modal-title">Get tickets for free!</h4>
-                                        <button type="button" class="close" data-dismiss="modal">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <form>
-                                            <div class="form-row">
-                                                <div class="form-group col-md-6">
-                                                    <label>First name</label>
-                                                    <input type="text" class="form-control" placeholder="First name">
+                            <button type="button" class="btn btn-light w-25 mx-auto mt-6" data-toggle="modal"
+                                data-target="#registerForm">
+                                Get tickets for
+                                free!
+                            </button>
+                            <div class="modal" id="registerForm">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title">Get tickets for free!</h4>
+                                            <button type="button" class="close" data-dismiss="modal">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="form-group col-md-6">
+                                                        <label>First name</label>
+                                                        <input type="text" class="form-control" placeholder="First name">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Last name</label>
+                                                        <input type="text" class="form-control" placeholder="Last name">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group col-md-6">
-                                                    <label>Last name</label>
-                                                    <input type="text" class="form-control" placeholder="Last name">
+                                                <div class="form-group">
+                                                    <label for="inputEmail">Email</label>
+                                                    <input type="email" class="form-control" id="inputEmail"
+                                                        placeholder="johndoe@gmail.com">
                                                 </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputEmail">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail" placeholder="johndoe@gmail.com">
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Date of Birth</label>
-                                                <input type="date" id="datepicker" class="form-control" placeholder="Choose">
-                                            </div>
-                                            <button type="submit" class="btn btn-darker">Register</button>
+                                                <div class="form-group">
+                                                    <label>Date of Birth</label>
+                                                    <input type="date" id="datepicker" class="form-control" placeholder="Choose">
+                                                </div>
+                                                <button type="submit" class="btn btn-darker">Register</button>
+                                        </div>
+
+                                        </form>
+
                                     </div>
-
-                                    </form>
-
                                 </div>
                             </div>
                         </div>
@@ -120,7 +127,44 @@
         </section>
     </header>
 
+    <section>
+        <div class="container-fluid">
+            <div class="row h-100">
+                <div class="col-md-6">
 
+
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="location-info">
+        <div class="container">
+            <div class="row text-light align-items-center h-75">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h3 class="display-4 mt-4 mb-5">Brooklyn Bridge Park</h3>
+                            <p>
+                                <span class="d-block mb-4">334 Furman St, Brooklyn, NY 11201</span>
+                                <span class="d-block w-60 mb-4">Three entrance/exit gates from the 30 West and 70 South,
+                                    one
+                                    mid-block beetwen them on 40 West </span>
+                                <span class="d-block w-60 mb-4">Two exit only gates: one on the corner of 50 South and 40
+                                    West,
+                                    and one mid-block on 60 South </span>
+                            </p>
+                        </div>
+
+                        <div class="col-md-6 text-right mt-4 mr-5"><a href="#"><i class="fas fa-map-marked-alt fa-2x"></i><span>Download
+                                    Map</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

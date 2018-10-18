@@ -65,7 +65,8 @@
 //     "cyan":       $cyan,
 //     "white":      $white,
 //     "gray":       $gray-600,
-//     "gray-dark":  $gray-800
+//     "gray-dark":  $gray-800,
+
 //   ),
 //   $colors
 // );
@@ -198,11 +199,11 @@
 // //
 // // Define the maximum width of `.container` for different screen sizes.
 
-// $container-max-widths: (
+$container-max-widths: (
 //   sm: 540px,
 //   md: 720px,
 //   lg: 960px,
-//   xl: 1140px
+  xl: 1250px );
 // ) !default;
 
 // @include _assert-ascending($container-max-widths, "$container-max-widths");

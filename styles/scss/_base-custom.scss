@@ -7,6 +7,7 @@
     --patternColor: #1f1a25;
     --primaryColor: #1e023c;
     --secondaryColor:#5724a8;
+    --footerColor:
 }
 
 html,
@@ -17,8 +18,11 @@ body {
 
 
 /* CUSTOM CHANGES */
-.mb-6 {
+.mb-6, {
     margin-bottom: 5rem;
+}
+.mt-6 {
+    margin-top: 5rem;
 }
 
 .pt-6 {
@@ -29,6 +33,10 @@ body {
     padding: 5.5rem 0 5.5rem 0;
 }
 
+.w-60 {
+    width: 60%;
+}
+
 .h-20 {
     min-height: 15%;
 }
@@ -36,12 +44,17 @@ body {
 .h-40 {
     height: 40%;
 }
+.h-30 {
+    height: 30%;
+
+}
 .h-45 {
     height: 45%;
 }
 .h-60 {
     height: 60%;
 }
+
 .h-90 {
     min-height: 90%;
 }
@@ -224,6 +237,16 @@ header {
 }
 
 /* SPONSORS SECTION STYLES */
+
+                /* INFO PAGE -
+                LOCATION SECTION STYLES
+                                       */
+
+.location-info {
+    background-color: #1e023c;
+}
+
+
 
 
 
